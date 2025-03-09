@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Page Title -->
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Short Explanation -->
+    <p id="description">Please fill out the form below to participate in our survey.</p>
+
+    <!-- Form -->
+    <form id="survey-form">
+        
+        <!-- Name Field -->
+        <label id="name-label" for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Email Field -->
+        <label id="email-label" for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Number Field -->
+        <label id="number-label" for="number">Your Age:</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+        <!-- Dropdown Menu -->
+        <label for="dropdown">Choose your option:</label>
+        <select id="dropdown" name="options" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Do you agree with the terms?</legend>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="agreement" value="yes" required>
+            <label for="no">No</label>
+            <input type="radio" id="no" name="agreement" value="no">
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Select your preferred contact methods:</legend>
+            <label for="email-contact">Email</label>
+            <input type="checkbox" id="email-contact" name="contact-method" value="email">
+            <label for="phone-contact">Phone</label>
+            <input type="checkbox" id="phone-contact" name="contact-method" value="phone">
+        </fieldset>
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter any comments" rows="4" cols="50"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
